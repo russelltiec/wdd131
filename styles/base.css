@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sticky Footer Layout Setup */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Fluid base font sizing matching screen scaling */
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.5rem);
+    /* font-size: clamp(1rem, 4vw + 1rem, 2rem); */
+}
+
+/* Header Styling */
+header {
+    background-color: #163d5c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header span {
+    display: block;
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 1.6rem);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2b2b2b;
+    padding: 0.75rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 1vw, 1.05rem);
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #79c0ff;
+    text-decoration: underline;
+}
+
+/* Main Container */
+main {
+    max-width: 1200px;
+    width: 92%;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+main h1 {
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw + 0.5rem, 2.5rem);
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+}
+
+/* Grid Layout (2 unequal columns) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #c5d0de;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.card-header {
+    background-color: #163d5c;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.85rem;
+    font-size: clamp(1rem, 1.2vw, 1.15rem);
+    /* font-size: clamp(1.5rem, 4vw + 1rem, 3rem); */
+
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* About Me Card Inner Layout */
+.bio-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 1.75rem;
+}
+
+.bio-row p {
+    line-height: 1.6;
+    color: #333333;
+    flex: 1;
+}
+
+.profile-img {
+    border-radius: 4px;
+    object-fit: fill;
+    /* border: 1px solid #ddd; */
+    width: 250px;
+    height: 250px;
+}
+
+/* Location Section */
+.location-section h3 {
+    text-align: center;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    color: #222222;
+    margin-bottom: 0.35rem;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin-bottom: 1rem;
+}
+
+.location-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.flag-img {
+    border: 1px solid #ccc;
+    object-fit: fill;
+    width: 140px;
+    height: 80px;
+}
+
+.location-row p {
+    line-height: 1.6;
+    color: #333333;
+    flex: 1;
+}
+
+/* Web Dev Resources List */
+.resource-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resource-list li a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.resource-list li a:hover {
+    color: #003d82;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #163d5c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+#lastModified {
+    color: #ffeb3b;
+}

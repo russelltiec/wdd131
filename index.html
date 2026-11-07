@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course landing page by Russell Chibwe.">
+    <title>WDD 131: Dynamic Web Fundamentals</title>
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/russell-chibwe-008b01449/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+            <a href="#" target="_blank" rel="noopener">Final Project</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1>Russell Chibwe</h1>
+
+        <div class="grid-container">
+            <!--  About Me -->
+            <section class="card about-me-card">
+                <div class="card-header">About Me</div>
+                <div class="card-content">
+                    <div class="bio-row">
+                        <p>My name is Russell and I work for Bikita Minerals and i am a Software Development student at the Bringham Young University. I live and work in Zimbabwe, managing enterprise IT systems and digital solutions. I love building web applications, exploring new technologies, and spending time with my family.</p>
+                        <img src="images/profile.jpg" alt="Russell Chibwe profile photo" class="profile-img" width="1500" height="150">
+                    </div>
+
+                    <div class="location-section">
+                        <h3>Harare, Zimbabwe</h3>
+                        <hr class="divider">
+                        <div class="location-row">
+                            <img src="images/zimbabwe-flag.png" alt="Official Flag of Zimbabwe" class="flag-img" width="120" height="80">
+                            <p>Zimbabwe is located in southern Africa, known for its rich history, vibrant culture, magnificent Victoria Falls, and diverse wildlife species. Harare serves as the dynamic capital and commercial hub.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Dev Resources -->
+            <section class="card resources-card">
+                <div class="card-header">Web Dev Resources</div>
+                <div class="card-content">
+                    <ul class="resource-list">
+                        <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+                        <li><a href="https://picsum.photos" target="_blank" rel="noopener">Lorem Picsum Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎄 Russell Chibwe 🎄 Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
+
