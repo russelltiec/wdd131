@@ -6,9 +6,9 @@
   --sunlit-gold: #c99a48;
   --page-bg: #f6f4fa;
   --card-surface: #ffffff;
-  --card-bg: rgba(255, 255, 255, 0.9);
-  --card-shadow: rgba(30, 25, 43, 0.25);
-  --heading-shadow: rgba(0, 0, 0, 0.18);
+  --card-bg: #ffffff;
+  --card-shadow: #1e192b;
+  --heading-shadow: #000000;
   --text-light: #ffffff;
   --text-dark: #1e192b;
   --text-muted: #3b354a;
