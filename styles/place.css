@@ -5,7 +5,11 @@
   --canopy-dark: #1f4117;
   --sunlit-gold: #c99a48;
   --page-bg: #f6f4fa;
+  --card-surface: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.9);
+  --card-shadow: rgba(30, 25, 43, 0.25);
+  --heading-shadow: rgba(0, 0, 0, 0.18);
+  --text-light: #ffffff;
   --text-dark: #1e192b;
   --text-muted: #3b354a;
   --font-main: "Roboto", system-ui, -apple-system, sans-serif;
@@ -27,7 +31,7 @@ body {
 
 header {
   background-color: var(--jacaranda-purple);
-  color: #ffffff;
+  color: var(--text-light);
   text-align: center;
   padding: 1rem;
   border-bottom: 6px solid var(--canopy-green);
@@ -58,7 +62,7 @@ header h1 {
 }
 
 .card {
-  background-color: var(--card-bg);
+  background-color: var(--card-surface);
   padding: 1rem 1.25rem 1.5rem;
   text-align: center;
 }
@@ -104,7 +108,7 @@ header h1 {
 
 footer {
   background-color: var(--jacaranda-dark);
-  color: #ffffff;
+  color: var(--text-light);
   text-align: center;
   padding: 0.9rem 1rem;
   border-top: 6px solid var(--sunlit-gold);
@@ -132,19 +136,19 @@ footer p {
     width: 280px;
     padding: 0 0 1rem;
     text-align: left;
-    box-shadow: 0 4px 16px rgba(30, 25, 43, 0.25);
+    box-shadow: 0 4px 16px var(--card-shadow);
     backdrop-filter: blur(4px);
   }
 
   .card h2 {
     background-color: var(--canopy-green);
-    color: #ffffff;
+    color: var(--text-light);
     padding: 0.55rem 0.9rem;
     margin: 0 0 0.75rem;
     width: calc(100% + 14px);
     margin-left: -7px;
     font-size: 1.2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 2px 6px var(--heading-shadow);
   }
 
   .card dl {
