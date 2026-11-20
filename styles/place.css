@@ -1,0 +1,178 @@
+:root {
+  --jacaranda-purple: #5b3a9e;
+  --jacaranda-dark: #3d2470;
+  --canopy-green: #2f5e24;
+  --canopy-dark: #1f4117;
+  --sunlit-gold: #c99a48;
+  --page-bg: #f6f4fa;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --text-dark: #1e192b;
+  --text-muted: #3b354a;
+  --font-main: "Roboto", system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background-color: var(--page-bg);
+  line-height: 1.4;
+}
+
+header {
+  background-color: var(--jacaranda-purple);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 6px solid var(--canopy-green);
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-picture {
+  display: block;
+  width: 100%;
+}
+
+.hero-picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1rem 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--jacaranda-dark);
+}
+
+.weather-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0.25rem auto 1rem;
+}
+
+.card dl {
+  margin: 0 auto;
+  max-width: 320px;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.card dl > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.card dt {
+  font-weight: 700;
+  text-align: right;
+  color: var(--text-muted);
+}
+
+.card dd {
+  margin: 0;
+  text-align: left;
+}
+
+footer {
+  background-color: var(--jacaranda-dark);
+  color: #ffffff;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  border-top: 6px solid var(--sunlit-gold);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .hero-picture img {
+    height: 540px;
+    object-fit: cover;
+  }
+
+  .card {
+    position: absolute;
+    background-color: var(--card-bg);
+    width: 280px;
+    padding: 0 0 1rem;
+    text-align: left;
+    box-shadow: 0 4px 16px rgba(30, 25, 43, 0.25);
+    backdrop-filter: blur(4px);
+  }
+
+  .card h2 {
+    background-color: var(--canopy-green);
+    color: #ffffff;
+    padding: 0.55rem 0.9rem;
+    margin: 0 0 0.75rem;
+    width: calc(100% + 14px);
+    margin-left: -7px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  }
+
+  .card dl {
+    max-width: none;
+    padding: 0 0.9rem;
+    gap: 0.28rem;
+  }
+
+  .card dl > div {
+    grid-template-columns: 105px 1fr;
+    font-size: 0.88rem;
+  }
+
+  .data-card {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .weather-card {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .weather-heading::after {
+    content: " \26C5";
+  }
+}
